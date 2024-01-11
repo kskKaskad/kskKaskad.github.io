@@ -171,6 +171,7 @@ div .video iframe {
 	background-blend-mode: multiply;
 	transition: all 0.1s ease-in;
 	border-radius: 8px;
+	cursor: pointer;
 }
 .usl:hover {
 	background-color: rgba(0,0,0,0.25);
