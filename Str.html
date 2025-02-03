@@ -101,82 +101,21 @@
 		}
 	</style>
 
-<!-- Принятие куки -->
-<div class="cookie_notice">
-    Этот сайт использует файлы cookies и сервисы сбора технических данных посетителей для обеспечения работоспособности и улучшения качества обслуживания. Продолжая использовать наш сайт, вы автоматически соглашаетесь с использованием данных технологий.
-    <div>
-        <a class="cookie_btn" id="cookie_close" href="#close">Согласиться</a>
-        <a class="cookie_btn" href="/politica">Политика конфиденциальности</a>
-    </div>
-</div>
-<script>
-	// функция возвращает cookie с именем name, если есть, если нет, то undefined    
-function getCookie(name) {
-    let matches = document.cookie.match(new RegExp(
-    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-    ));
-    return matches ? decodeURIComponent(matches[1]) : undefined;
-}
-let cookiecook = getCookie("cookiecook"),
-cookiewin = document.getElementsByClassName('cookie_notice')[0];    
-// проверяем, есть ли у нас cookie, с которой мы не показываем окно и если нет, запускаем показ
-if (cookiecook != "no") {
-    // показываем    
-    cookiewin.style.display="block"; 
-    // закрываем по клику
-    document.getElementById("cookie_close").addEventListener("click", function(){
-        cookiewin.style.display="none";    
-        // записываем cookie на 1 день, с которой мы не показываем окно
-        let date = new Date;
-        date.setDate(date.getDate() + 1);    
-        document.cookie = "cookiecook=no; path=/; expires=" + date.toUTCString();               
-    });
-}
-</script>
-<!-- Принятие куки -->
+
+
 </head>
 <body>
 	<div class="container">
 		<div class="buttons">
-      <div class="logoo">
-        <img src="/theme/images/NewLogo.png">
-        <p>Конно-спортивный клуб «Каскад»</p>
-        
-      </div>
-    </div>
-    <div class="dropdown">
-      <a onclick="myFunction()" class="dropbtn">МЕНЮ</a>
-      <div id="myDropdown" class="dropdown-content">
-      <a class="button" href="/"><p>Главная</p></a>
-      <a class="button" href="/trainers"><p>Тренеры</p></a>
-      <a class="button" href="/horses"><p>Лошади</p></a>
-      <a class="button" href="/training"><p>Записаться</p></a>
-      <!-- <a class="button" href="/rabota"><p>Стать частью команды</p></a> -->
-      <script>/* Когда пользователь нажимает на кнопку,
-переключение между скрытием и отображением раскрывающегося содержимого */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Закройте выпадающее меню, если пользователь щелкает за его пределами
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}</script>
-        </div>
-    </div>
+		<a class="button" href="/"><p>Главная</p></a>
+		<a class="button" href="/trainers"><p>Тренеры</p></a>
+		<a class="button" href="/horses"><p>Лошади</p></a>
+		<a class="button" href="/training"><p>Записаться</p></a>
+		</div>
 
 <div class="emblem_mini">
           <a href="/"><img src="/theme/images/emblemob.png"></a>
-</div>
+
 <div class='albob2'>
      <h1 class='alb2'>Стрельба из лука<h1>
 </div>
