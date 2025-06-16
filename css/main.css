@@ -230,7 +230,14 @@ a {
 		margin: auto;
 		margin-top: 6em;
 		font-size:  40px;
-		background: rgba(37,219,237,0.8);
+		filter: drop-shadow(rgba(0, 0, 0, 1.0) 0 0 108px);
+	}
+	.horse .boxx {
+/*		display: block;*/
+		margin: auto;
+		font-size: 35px;
+		justify-content: center;
+		align-content: center;
 	}
 
 /*ПОДВАЛ*/
@@ -341,16 +348,15 @@ a {
 @media only screen and (max-width: 910px) {
 	.container > .hello .right {
 		margin-top: 300px;
-		justify-content: center;
+/*		justify-content: center;*/
+		flex-direction: column;		
 	}
 	.container > .hello .left {
 		margin-bottom: 300px;
-/*		margin-left: 270px;*/
 		margin-left: 66%;
-/*		margin-right: auto;*/
+		flex-direction: column;	
 	}
 	.container > .hello .left .box {
-		margin: 0 calc(var(--horizontalPadding) * 5);
 		min-width: 200px;
 	}
 	.container > .hello .left .box p {
@@ -364,7 +370,7 @@ a {
 		margin-right: 200px;
 	}
 	.container > .info {
-		--height: 55vh;
+		--height: 40vh;
 	}
 }
 @media only screen and (max-width: 891px) {
