@@ -251,6 +251,9 @@ a {
 		font-weight: normal;
 		padding: 1em;
 	}
+	.IPTV {
+		width: 200px;
+	}
 
 /*ТРЕНЕРЫ*/
 	.trainers {
@@ -411,6 +414,9 @@ a {
 	}
 	.container > .hello #yandex_form {
 		min-width: 305px;
+	}
+	.IPTV {
+		width: 150px;
 	}
 }
 @media only screen and (max-width: 357px) {
